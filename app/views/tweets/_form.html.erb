@@ -1,0 +1,18 @@
+<form class="form-inline">
+  <div class="form-group">
+    <input type="text" class="form-control" name="search" id="search" placeholder="Search" value="<%= search %>">
+  </div>
+  <div class="form-group">
+    <label for="sort">Sort</label>
+    <select class="form-control" id="sort" name="result_type" selected="<%= search_result_type %>">
+      <% Twitter::SearchTerm::RESULT_TYPES.each do |type| %>
+        <option value="<%= type %>" <% if type == search_result_type %>selected<% end %>><%= type.capitalize%></option>
+      <% end %>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="count">Count</label>
+    <input type="number" class="form-control" id="count" name="count" value="<%= search_count %>">
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>

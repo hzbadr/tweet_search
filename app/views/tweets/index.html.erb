@@ -1,0 +1,6 @@
+
+<div id="tweets">
+  <%= render 'form' %>
+
+  <%= render(partial: 'tweet', collection: @tweets, as: :tweet) || render(partial: 'empty_tweets') %>
+</div>
