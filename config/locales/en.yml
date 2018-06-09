@@ -39,7 +39,7 @@ en:
     popular: "Popular"
     mixed: "Mixed"
     happy_searching: "Happy Searching!"
-    no_tweets: "No Tweets found for you search."
+    no_tweets: "No Tweets found!"
     not_reachable: "Twitter is not reachable at the moment, try again later!"
     favorites: "Favorites"
     retweets: "Retweets"
