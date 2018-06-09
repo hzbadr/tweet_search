@@ -2,7 +2,7 @@
 
 * Rails v5.2.0 & Ruby v2.5.1
 
-* Update config/secrets.rb with the provided secret.
+* Update config/master.key with the provided secret.
 
 * EDITOR=vim rails credentials:edit
   
