@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Rails v5.2.0 & Ruby v2.5.1
 
-Things you may want to cover:
+* Update config/secrets.rb with the provided secret.
 
-* Ruby version
+* EDITOR=vim rails credentials:edit
+Add production consumer_key & consumer_secret
 
-* System dependencies
+# TODOs
 
-* Configuration
+* Convert the application to SPA.
 
-* Database creation
+* Use caching.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
