@@ -5,7 +5,8 @@
 * Update config/secrets.rb with the provided secret.
 
 * EDITOR=vim rails credentials:edit
-Add production consumer_key & consumer_secret
+  
+  Add production consumer_key & consumer_secret
 
 # TODOs
 
