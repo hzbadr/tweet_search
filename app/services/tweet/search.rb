@@ -1,6 +1,6 @@
 module Tweet
   class Search
-    def initialize(params, search_term_class: Twitter::SearchTerm, client: Twitter::RestClient.client)
+    def initialize(params, search_term_class: Twitter::SearchTerm, client: Twitter::RestClient.new)
       @client = client
       @search_term = search_term_class.new(params["search"],
                                           result_type: params["result_type"],
