@@ -1,9 +1,9 @@
 <div class="empty-tweet">
   <% if search.present? %>
     <h5 class="card-title">
-      No Tweets found for you search.
+      <%= I18n.t("tweets.no_tweets") %>
     </h5>
   <% else %>
-    <h5>Happy Searching!</h5>
+    <h5><%= I18n.t("tweets.happy_searching") %></h5>
   <% end %>
 </div>

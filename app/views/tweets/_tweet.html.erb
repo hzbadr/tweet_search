@@ -2,8 +2,8 @@
   <div class="card-body">
     <h5 class="card-title"><%= tweet.user.name %></h5>
     <p class="card-text"><%= tweet.text %></p>
-    <a href="#" class="card-link"><span>Favorites:</span> <%= tweet.favorite_count %></a>
+    <a href="#" class="card-link"><span><%= I18n.t("tweets.favorites") %>:</span> <%= tweet.favorite_count %></a>
     <a href="#" class="card-link">|</a>
-    <a href="#" class="card-link"><span>Retweets:</span> <%= tweet.retweet_count %></a>
+    <a href="#" class="card-link"><span><%= I18n.t("tweets.retweets") %>:</span> <%= tweet.retweet_count %></a>
   </div>
 </div>

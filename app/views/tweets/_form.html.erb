@@ -1,18 +1,18 @@
 <form class="form-inline">
   <div class="form-group">
-    <input type="text" class="form-control" name="search" id="search" placeholder="Search" value="<%= search %>">
+    <input type="text" class="form-control" name="search" id="search" placeholder="<%= I18n.t("tweets.search") %>" value="<%= search %>">
   </div>
   <div class="form-group">
-    <label for="sort">Sort</label>
-    <select class="form-control" id="sort" name="result_type" selected="<%= search_result_type %>">
+    <label for="type"><%= I18n.t("tweets.type") %></label>
+    <select class="form-control" id="type" name="result_type" selected="<%= search_result_type %>">
       <% Twitter::SearchTerm::RESULT_TYPES.each do |type| %>
-        <option value="<%= type %>" <% if type == search_result_type %>selected<% end %>><%= type.capitalize%></option>
+        <option value="<%= type %>" <% if type == search_result_type %>selected<% end %>><%= I18n.t("tweets.#{type}") %></option>
       <% end %>
     </select>
   </div>
   <div class="form-group">
-    <label for="count">Count</label>
+    <label for="count"><%= I18n.t("tweets.count") %></label>
     <input type="number" class="form-control" id="count" name="count" value="<%= search_count %>">
   </div>
-  <button type="submit" class="btn btn-default">Search</button>
+  <button type="submit" class="btn btn-default"><%= I18n.t("tweets.search") %></button>
 </form>
