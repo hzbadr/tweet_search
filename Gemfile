@@ -32,3 +32,4 @@ end
 
 gem 'twitter'
 gem 'bootstrap', '~> 4.1.1'
+gem 'rails-controller-testing'

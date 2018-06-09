@@ -1,6 +1,9 @@
 
 <div id="tweets">
   <%= render 'form' %>
-
-  <%= render(partial: 'tweet', collection: @tweets, as: :tweet) || render(partial: 'empty_tweets') %>
+  <% if @error_message %>
+    <%= render partial: 'error', locals: { error_message: @error_message } %>
+  <% else %>
+    <%= render(partial: 'tweet', collection: @tweets, as: :tweet) || render(partial: 'empty_tweets') %>
+  <% end %>
 </div>
