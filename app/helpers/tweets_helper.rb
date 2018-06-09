@@ -4,7 +4,7 @@ module TweetsHelper
   end
 
   def search_count
-    params["count"].blank? ? Twitter::SearchTerm::DEFAULT_TWEET_COUNT : params["count"]
+    params["count"].to_i > 0 ? params["count"] : Twitter::SearchTerm::DEFAULT_TWEET_COUNT
   end
 
   def search_result_type
