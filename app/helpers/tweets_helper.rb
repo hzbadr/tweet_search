@@ -1,4 +1,4 @@
-module TweetsHelper 
+module TweetsHelper
   def search
     params["search"]
   end
@@ -8,6 +8,6 @@ module TweetsHelper
   end
 
   def search_result_type
-    params["result_type"].blank? ? Twitter::SearchTerm::DEFAULT_RESULT_TYPE : params["result_type"] 
+    params["result_type"].blank? ? Twitter::SearchTerm::DEFAULT_RESULT_TYPE : params["result_type"]
   end
 end

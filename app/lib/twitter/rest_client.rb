@@ -1,6 +1,5 @@
 module Twitter
   class RestClient
-
     attr_reader :client
     def initialize
       twitter_credentials = Rails.application.credentials[Rails.env.to_sym][:twitter]
